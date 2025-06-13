@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Tech Explorer</title>
+    <style>
+        body{
+            background:white;
+            margin: 0px;
+            font-family: Arial, sans-serif;
+            padding: 0px;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            z-index: 1;
+            background:rgb(36, 35, 35);
+            box-shadow: 2px 2px 2px rgba(82, 210, 241,0.3);
+        }
+        .logo{
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            border-radius: 50%;
+            top: -10px;
+            left: 100px;
+            
+        }
+        .name{
+            color: white;
+            font-size: 60px;
+            position: absolute;
+            left: 280px;
+            top: -50px;
+            text-shadow: 5px 5px 2px rgba(82, 210, 241,0.3);
+            
+            
+        }
+        hr{
+            width: 35%;
+            position: absolute;
+            top: 70%;
+            left: 20%;
+            border:1px solid rgba(12, 226, 108, 0.3);
+        }
+        .menu{
+            position: absolute;
+            left: 55%;
+            top: 35%;
+            display: flex;
+            cursor: pointer;
+        }
+        .menu li{
+            list-style: none;
+            color: #00c3ff;
+            font-size: 20px;
+            margin: 20px;
+            text-shadow: 2px 2px 2px rgba(82, 146, 241, 0.3);
+        }
+        .email{
+            position: absolute;
+            left: 55%;
+            top: 10%;
+            color: #00c3ff;
+            font-size: 15px;
+            text-shadow: 2px 2px 2px rgba(82, 146, 241, 0.3);
+        }
+        .phone{
+            position: absolute;
+            left: 80%;
+            top: 10%;
+            color: #00c3ff;
+            font-size: 15px;
+            text-shadow: 2px 2px 2px rgba(82, 146, 241, 0.3);
+        }
+        .img-box{
+            width: 100%;
+            height: 450px;
+            top: 100px;
+            position: relative;
+            background-size: 100% 100%;
+            transition: 1s ease all;        
+            animation: img 10s linear infinite;
+        }
+        @keyframes img{
+            0%{
+                background-image: url("t1.jpg");
+            }
+            20%{
+                background-image: url("t2.jpg");
+            }
+            40%{
+                background-image: url("t3.jpg");
+            }
+            60%{
+                background-image: url("t4.jpg");
+            }
+            80%{
+                background-image: url("t5.jpg");
+            }
+            100%{
+                background-image: url("t1.jpg");
+            }
+        }
+        .info-box{
+            width: 60%;
+            height: 300px;
+            position: relative;
+            text-align: justify;
+            font-size: 15pt;
+            top: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .info{
+            position: absolute;
+            top: 20%;
+            left: 15px;
+            background: rgba(137, 211, 233, 0.3);
+            color: black;
+        }
+        .box{
+			width: 100%;
+			height: 100px;
+			border: 2px solid;
+			background-image: linear-gradient(to right,red,yellow,blue);
+			position: relative;
+			font-size: 50px;
+			font-weight: bold;
+			font-family: cursive;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+        .box1{
+			width: 100%;
+			height: 100px;
+			border: 2px solid;
+			background-image: linear-gradient(to right,rgb(14, 212, 57),rgb(65, 13, 4),blue);
+			position: relative;
+			font-size: 50px;
+			font-weight: bold;
+			font-family:algerian;
+            left: 90px;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+        
+        .hr1{
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 37%;
+            left: 0;
+            background-image: linear-gradient(to right,red,yellow,blue);
+            
+        }
+        .hr2{
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 9%;
+            left: 0;
+            background-image: linear-gradient(to right,rgb(89, 11, 214),rgb(19, 214, 149),rgb(202, 17, 162));
+            
+        }
+        .contant{
+            width: 500px;
+            height: 500px;
+            border-style: solid;
+            border-width: 2px;
+            position: absolute;
+            right: 0;
+            top: 580px;
+            /* border-image: linear-gradient(rgb(14, 212, 57),rgb(65, 13, 4),blue); */
+            }
+            .footer{
+                width: 99%;
+                height: 310px;
+                position: relative;
+                top: 350px;
+                background-image: linear-gradient(to right,rgb(6, 1, 34),rgb(10, 2, 48),rgb(2, 2, 39));
+            }
+            .contant1{
+                color: white;
+                position: relative;
+                margin-left:100px;
+                top:20px;
+                font-size: 20px;  
+            }
+            .footer1{
+                color: white;
+                position: relative;
+                margin-left:100px;
+                top:120px;
+                font-size: 15px;
+                display: flex;
+                list-style: none;
+                cursor: pointer;
+            }
+            .footer1 li{
+                margin-left: 20px;
+                padding-left: 30px;
+            }
+            ul{
+                color: white;
+                position: relative;
+                margin-left:100px;
+                top:150px;
+                font-size: 15px;
+                display: flex;
+                list-style: none;
+                cursor: pointer;
+            }
+            ul li{
+                margin-left: 20px;
+                padding-left: 30px; 
+
+            }
+            .r1,.r2{
+                width: 80%;
+                height: 2px;
+                position: relative;
+                left:0px;
+                top:180px;
+                background-image: linear-gradient(to right,rgb(14, 212, 57),rgb(65, 13, 4),blue);
+            }
+            .r2{
+                top: 150px;
+            }
+            .r1{
+                top: 0;
+            }
+            .copy{
+                color: white;
+                position: relative;
+                bottom: -150px;
+                left: 130px;
+            }
+            
+    </style>    
+</head>
+<body>
+<div class="header">
+    <img src="s.png" class="logo">
+    <p class="name">S Tech Explorer</p>
+    <span class="email">Email-Id:sachinkumar1710152@gmail.com</span>
+    <span class="phone">Mobile-Number:123456789</span>
+    <hr>
+    <ol class="menu">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Gallery</li>
+        <li>Contact Us</li>
+    </ol>
+</div>
+<div class="img-box"></div>
+<div class="info-box">
+    <div class="box">Welcome To S Tech Explorer
+        <hr class="hr1">
+    </div>
+    <p class="info">Welcome to S Tech Explorer, your gateway to the future of technology.
+        Here, innovation meets curiosity on every digital frontier.
+        We invite you to embark on a journey of discovery and insight.
+        Our mission is to inspire, inform, and ignite innovation.
+        Each step forward opens a world of possibilities.
+        Dive into the realm of artificial intelligence and machine learning.
+        Uncover the secrets behind groundbreaking software solutions.
+        Embrace the evolution of hardware, from microchips to quantum computing.
+        Navigate through the complexities of cybersecurity and data protection.
+        Experience the thrill of virtual reality and immersive digital worlds.<br>
+        Discover the power of big data and its impact on decision-making.      
+        Learn about the pioneers who drive technological revolutions.
+        Explore how tech is transforming everyday life and global industries.
+        Unlock the potential of cloud computing and advanced networking.
+        Join us as we demystify the intricacies of emerging technologies.
+        Discover new tools that empower you to build, create, and inspire.
+        Experience firsthand the evolution of mobile and wearable technology.
+         Join us as we explore the endless possibilities of tomorrow.
+        The future awaits—step in, explore, and redefine what’s possible.</p>
+</div>
+<div class="contant">
+    <div class="box1">Daily Contant</div>
+    <hr class="hr2">
+</div>
+<div class="footer"><span class="contant1">Join us as we demystify the intricacies of emerging technologies.Explore how tech is transforming everyday life and global industries.
+    </span>
+<ol class="footer1">
+   <li> About Us</li>
+<li>Contact Future's experts</li>
+<li>Contact Us</li>
+<li>Terms and conditions</li>
+<li>Privacy policy</li>
+</ol>
+<ul>
+<li>Cookies policy</li>
+<li>Advertise with us</li>
+<li>Web notifications</li>
+<li>Accessibility Statement</li>
+<li>Careers</li>
+</ul>
+
+<hr class="r1">
+<hr class="r2">
+
+<p class="copy">Copyright &copy; 2025 S Tech Explorer. All rights reserved.</p>
+</div>
+</body>
+</html>
